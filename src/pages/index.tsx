@@ -35,7 +35,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="flex flex-row justify-between mt-[50px]">
+                <div className="flex sm:flex-row flex-col items-center justify-between mt-[50px]">
                     <div className="text-[14px] text-start font-[400px]">
                         <a href="mailto:inquiries@artifact.news">inquiries@artifact.news</a>
                     </div>
