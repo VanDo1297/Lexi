@@ -7,12 +7,12 @@ export default function Home() {
     return (
         <>
             <SEOComponent />
-            <main className='h-screen sm:px-[32px] px-[16px] py-[30px] flex flex-col'>
-                <div className="w-full py-[20px] lg:h-[40%] sm:h-[30%] sm:min-h-[200px] h-[15%] max-h-[400px] flex sm:items-start flex-col">
-                    <img className='h-full object-contain' src={'/assets/logo.svg'} alt="" />
+            <main className='min-h-screen sm:px-[32px] px-[16px] py-[30px] flex flex-col'>
+                <div className="w-full py-[20px] flex sm:items-start items-center flex-col">
+                    <img className='md:w-[500px] sm:w-[300px] w-[200px] object-contain' src={'/assets/logo.svg'} alt="" />
                 </div>
-                <div className="sm:block flex sm:mt-[50px] mt-auto">
-                    <div className="flex xl:flex-row flex-col justify-between sm:mt-[40px] mt-[100px] self-end">
+                <div className="sm:block flex mt-auto sm:mb-[40px]">
+                    <div className="flex w-full xl:flex-row flex-col justify-between sm:mt-[40px] mt-[100px] self-end">
                         <div className="flex flex-col sm:text-start text-center xl:pl-[48px] xl:pb-[0] pb-[32px] pl-[16px]">
                             <p className='sm:text-[56px] text-[32px] font-[300] leading-[1em]'>A <span className='italic'>personalized</span>  news feed </p>
                             <p className="sm:text-[56px] text-[32px] font-[300] leading-[1em]">powered by artificial intelligence</p>
