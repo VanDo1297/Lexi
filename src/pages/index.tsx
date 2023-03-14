@@ -13,7 +13,7 @@ export default function Home() {
                 </div>
                 <div className="sm:block flex mt-auto sm:mb-[40px]">
                     <div className="flex w-full xl:flex-row flex-col justify-between sm:mt-[40px] mt-[100px] self-end">
-                        <div className="flex flex-col sm:text-start text-center xl:pl-[48px] xl:pb-[0] pb-[32px] pl-[16px]">
+                        <div className="flex flex-col sm:text-start text-center xl:pl-[48px] xl:pb-[0] pb-[32px] sm:pl-[16px]">
                             <p className='sm:text-[56px] text-[32px] font-[300] leading-[1em]'>A <span className='italic'>personalized</span>  news feed </p>
                             <p className="sm:text-[56px] text-[32px] font-[300] leading-[1em]">powered by artificial intelligence</p>
                             <p className="sm:text-[20px] text-[15px] leading-[28px] sm:mt-[32px] mt-[16px] sm:mb-[48px] mb-[32px] font-[400]">Download the app to discover the best articles tailored just for you.</p>
