@@ -14,7 +14,7 @@ const SEOComponent = ({title, description, shareImage} :{title?:string,descripti
             <meta property="og:description" content={description || "Lexi app description"} />
             <meta property="og:type" content="website" />
             {shareImage && <>
-                <meta property="og:image" content={"https:"+ shareImage} />
+                <meta property="og:image" content={"https://lively-kitsune-8e6a8c.netlify.app/assets/logo.svg"} />
                 <meta property="twitter:image" content={"https:"+ shareImage}  />
                 <meta property="image"  content={"https:"+ shareImage} />
                 <meta name="og:image"  content={"https:"+ shareImage}  />
