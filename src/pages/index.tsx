@@ -1,12 +1,15 @@
 import { Inter } from 'next/font/google'
 import SEOComponent from '@/components/seo'
+import { getSEO } from '@/contentful/services/seo'
+import { SEO } from '@/contentful/services/seo/type';
 
-const inter = Inter({ subsets: ['latin'] })
-
+const SEO_KEY ="Home"
 export default function Home() {
     return (
         <>
-            <SEOComponent />
+            <SEOComponent 
+                key={SEO_KEY}
+            />
             <main className='min-h-screen sm:px-[32px] px-[16px] py-[30px] flex flex-col'>
                 <div className="w-full py-[20px] flex sm:items-start items-center flex-col">
                     <img className='md:w-[500px] sm:w-[300px] w-[200px] object-contain' src={'/assets/logo.svg'} alt="" />
