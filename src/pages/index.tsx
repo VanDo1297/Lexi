@@ -18,13 +18,11 @@ export default function Home() {
                             <p className="sm:text-[56px] text-[32px] font-[300] leading-[1em]">powered by artificial intelligence</p>
                             <p className="sm:text-[20px] text-[15px] leading-[28px] sm:mt-[32px] mt-[16px] sm:mb-[48px] mb-[32px] font-[400]">Download the app to discover the best articles tailored just for you.</p>
                             <div className="flex flex-row sm:justify-start justify-center">
-                                <a target={"_blank"} href="https://apps.apple.com/vn/app/lexi-learn-hebrew/id1670276596" className='sm:text-[18px] text-[16px] font-[400] leading-[1em] sm:px-[30px] px-[10px] sm:py-[20px] py-[15px] border-[1px] border-solid border-[#000] flex flex-row items-center'>
-                                    <img src={'./assets/apple.svg'} alt="" />
-                                    <p className="">App Store</p>
+                                <a target={"_blank"} href="https://apps.apple.com/vn/app/lexi-learn-hebrew/id1670276596" className=' border-[1px] border-solid border-[#000] flex flex-row items-center'>
+                                    <img className='w-[200px]' src={'./assets/app-store-badge.png'} alt="" />
                                 </a>
-                                <a target={"_blank"} href="https://play.google.com/store/apps/details?id=com.lexi.bohemian" className='sm:text-[18px] text-[16px] font-[400] leading-[1em] sm:px-[30px] px-[10px] sm:py-[20px] py-[15px] border-[1px] border-solid border-[#000] flex flex-row items-center'>
-                                    <img src={'./assets/google.svg'} alt="" />
-                                    <p className="">Google Play</p>
+                                <a target={"_blank"} href="https://play.google.com/store/apps/details?id=com.lexi.bohemian" className='border-[1px] border-solid border-[#000] flex flex-row items-center'>
+                                    <img className='w-[200px]' src={'./assets/google-play-badge.png'} alt="" />
                                 </a>
                             </div>
                         </div>
@@ -37,10 +35,10 @@ export default function Home() {
 
                 <div className="flex sm:flex-row flex-col items-center justify-between mt-[50px]">
                     <div className="text-[14px] text-start font-[400px]">
-                        <a href="mailto:inquiries@artifact.news">inquiries@artifact.news</a>
+                        <a href="mailto:lexi@bohemian.cc">lexi@bohemian.cc</a>
                     </div>
                     <div className="text-[14px] text-start font-[400px] flex flex-row items-center">
-                        <a href="#" className="">Terms of Service</a>
+                        <a target={"_blank"} href="https://docs.google.com/document/d/e/2PACX-1vQQ8uTUBMlxy9igFLRrfvdJbeFR2Y-TL1hbMj7IpETQBlo7r2EnclAKHTQxsWX5eBMe2K_nfCZ4KPGr/pub" className="">Terms of Service</a>
                         <div className="w-[5px] h-[5px] bg-black mx-[15px] rounded-[100%]"></div>
                         <a target={"_blank"} href="https://docs.google.com/document/d/e/2PACX-1vQQ8uTUBMlxy9igFLRrfvdJbeFR2Y-TL1hbMj7IpETQBlo7r2EnclAKHTQxsWX5eBMe2K_nfCZ4KPGr/pub" className="">Privacy Policy</a>
                     </div>
