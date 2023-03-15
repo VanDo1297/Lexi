@@ -2,14 +2,31 @@ import { Inter } from 'next/font/google'
 import SEOComponent from '@/components/seo'
 import { getSEO } from '@/contentful/services/seo'
 import { SEO } from '@/contentful/services/seo/type';
+import { findSEOContent } from '@/utils';
+export async function getStaticProps() {
 
+    const seoContent = await getSEO();
+
+    return {
+        props: {
+            seoContent: seoContent
+        },
+    }
+}
+
+interface IProps {
+    seoContent?: SEO[] | null,
+}
 const SEO_KEY ="Home"
-export default function Home() {
+export default function Home(props:IProps) {
+
+    const seo = props.seoContent ? findSEOContent(SEO_KEY, props.seoContent) : null;
+    
     return (
         <>
-            <SEOComponent 
-                key={SEO_KEY}
-            />
+            {seo  ? <SEOComponent 
+                title={seo.pageTitle}  description={seo.pageDescription} shareImage={seo.shareImages.url}
+            /> : <SEOComponent />}
             <main className='min-h-screen sm:px-[32px] px-[16px] py-[30px] flex flex-col'>
                 <div className="w-full py-[20px] flex sm:items-start items-center flex-col">
                     <img className='md:w-[500px] sm:w-[300px] w-[200px] object-contain' src={'/assets/logo.svg'} alt="" />
