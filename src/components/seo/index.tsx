@@ -17,7 +17,6 @@ const SEOComponent = ({title, description, shareImage} :{title?:string,descripti
             {/* */}
 
             {shareImage && <>
-            
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content={"https:"+ shareImage.url} />
                 <meta property="og:image:secure_url" content={"https:"+shareImage.url} />
