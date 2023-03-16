@@ -14,7 +14,7 @@ const SEOComponent = ({title, description, shareImage} :{title?:string,descripti
             <meta property="og:title" content={title || "Lexi"} />
             <meta property="og:description" content={description || "Lexi app description"} />
 
-            <meta property="og:type" content="website" />
+            {/* <meta property="og:type" content="website" /> */}
 
             {shareImage && <>
 
@@ -25,7 +25,7 @@ const SEOComponent = ({title, description, shareImage} :{title?:string,descripti
                 <meta property="og:image:height" content={shareImage.height+""} />
                 <meta property="og:image:alt" content="This is image" />
 
-                <meta property="twitter:card" content="summary" />
+                <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:image" content={"https:"+ shareImage.url}  />
                 <meta property="image"  content={"https:"+ shareImage.url} />
                 <meta name="image" content={"https:"+ shareImage.url}  />
