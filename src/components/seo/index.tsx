@@ -20,11 +20,12 @@ const SEOComponent = ({title, description, shareImage} :{title?:string,descripti
 
                 <meta property="og:image" content={"https:"+ shareImage.url} />
                 <meta property="og:image:secure_url" content={"https:"+shareImage.url} />
-                <meta property="og:image:type" content="image/jpeg" />
+                <meta property="og:image:type" content="image/png" />
                 <meta property="og:image:width" content={shareImage.width+""} />
                 <meta property="og:image:height" content={shareImage.height+""} />
                 <meta property="og:image:alt" content="This is image" />
 
+                <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:image" content={"https:"+ shareImage.url}  />
                 <meta property="image"  content={"https:"+ shareImage.url} />
                 <meta name="image" content={"https:"+ shareImage.url}  />
