@@ -14,10 +14,11 @@ const SEOComponent = ({title, description, shareImage} :{title?:string,descripti
             <meta property="og:title" content={title || "Lexi"} />
             <meta property="og:description" content={description || "Lexi app description"} />
 
-            {/* <meta property="og:type" content="website" /> */}
+            {/* */}
 
             {shareImage && <>
-
+            
+                <meta property="og:type" content="website" />
                 <meta property="og:image" content={"https:"+ shareImage.url} />
                 <meta property="og:image:secure_url" content={"https:"+shareImage.url} />
                 <meta property="og:image:type" content="image/png" />
