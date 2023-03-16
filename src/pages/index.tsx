@@ -25,7 +25,7 @@ export default function Home(props:IProps) {
     return (
         <>
             {seo  ? <SEOComponent 
-                title={seo.pageTitle}  description={seo.pageDescription} shareImage={seo.shareImages.url}
+                title={seo.pageTitle}  description={seo.pageDescription} shareImage={seo.shareImages}
             /> : <SEOComponent />}
             <main className='min-h-screen sm:px-[32px] px-[16px] py-[30px] flex flex-col'>
                 <div className="w-full py-[20px] flex sm:items-start items-center flex-col">
