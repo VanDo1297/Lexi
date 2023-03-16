@@ -37,3 +37,4 @@ const SEOComponent = ({title, description, shareImage} :{title?:string,descripti
 }
 
 export default SEOComponent;
+
