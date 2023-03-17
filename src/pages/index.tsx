@@ -19,7 +19,6 @@ interface IProps {
 }
 const SEO_KEY ="Home"
 export default function Home(props:IProps) {
-
     const seo = props.seoContent ? findSEOContent(SEO_KEY, props.seoContent) : null;
     
     return (

@@ -2,7 +2,7 @@ import { Image } from "@/contentful/types/image";
 import Head from "next/head";
 
 
-const SEOComponent = ({title, description, shareImage} :{title?:string,description?:string, shareImage?:Image}) =>{
+const SEOComponent = ({title, description, shareImage} :{title?:string,description?:string, shareImage?:Image | null}) =>{
    
     return( 
         <Head>

@@ -14,12 +14,11 @@ export const formatSEO = (seos: Entry<SEOResponse>[]) :  SEO[]  => {
     if(seos && seos.length > 0){
         var results : SEO[] = [];
         results = seos.map(seo => {
-            console.log(seo);
             return {
                 internalPage: seo.fields.internalPage,
                 pageTitle: seo.fields.pageTitle,
                 pageDescription: seo.fields.pageDescription,
-                shareImages: formatImage(seo.fields.shareImages)
+                shareImages: seo.fields.shareImages.fields ? formatImage(seo.fields.shareImages) : null
             }
         })
         return results;

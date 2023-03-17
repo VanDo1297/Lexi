@@ -4,7 +4,7 @@ export type SEO = {
     internalPage:string;
     pageTitle: string;
     pageDescription: string
-    shareImages: Image;
+    shareImages: Image | null;
 }
 export type SEOResponse  = {
    
