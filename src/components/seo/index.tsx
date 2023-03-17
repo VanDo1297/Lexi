@@ -10,7 +10,6 @@ const SEOComponent = ({title, description, shareImage} :{title?:string,descripti
             <meta name="description" content={description || "Lexi app description"} />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/favicon.ico" />
-
             <meta property="og:title" content={title || "Lexi"} />
             <meta property="og:description" content={description || "Lexi app description"} />
             {shareImage && <>
